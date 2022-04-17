@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box-1 {
+            position: relative;
+            top: 49px;
+            z-index: 35px;
+            background-color: green;
+        }
+
+        #box-2 {
+            /* hidden hogya element but space reserved and space is also hidden so use display none */
+            /* display: none;
+             visibility: hidden; */
+            position: relative;
+            top: 14px;
+            z-index: 135px;
+            /* z-index will work only for position absolutr, relative,fixed or sticky */
+            background-color: red;
+        }
+
+        #box-3 {
+            background-color: yellow;
+        }
+
+        #box-4 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box$*4 here dollar means dollar 1234 -->
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+
+</html>
