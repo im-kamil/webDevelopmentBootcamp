@@ -1,13 +1,34 @@
-console.log("javascript function");
 
-let name = "kamil";
-let name1 = "kamil";
-let name2 = "kamil";
-let name3 = "kamil";
-let name4 = "kamil";
+console.log("This is tutorial 53");
 
-console.log( name + " is a bad boy");
-console.log( name1 + " is a bad boy");
-console.log( name2 + " is a bad boy");
-console.log( name3 + " is a bad boy");
-console.log( name4 + " is a bad boy");
+function greet(name, greetText="Greetings from JavaScript"){
+    let name1 = "Name1";
+    console.log(greetText + " " + name);
+    console.log(name + " is a good boy");
+}
+
+function sum(a,b,c){
+    let d = a + b + c;
+    return d;
+    // This line will never execute (Unreachable code)
+    // console.log("Function is returned");
+}
+
+
+let name = "Harry";
+let name1 = "Shubham";
+let name2 = "Rohan";
+let name3 = "Sagar";
+let greetText1 = "Good Morning";
+greet(name, greetText1);
+greet(name1, greetText1);
+greet(name2, greetText1);
+// let returnVal = greet(name3);
+// console.log(returnVal)
+
+let returnVal = sum(1,2,3);
+console.log(returnVal)
+// console.log(name + " is a good boy");
+// console.log(name1 + " is a good boy");
+// console.log(name2 + " is a good boy");
+// console.log(name3 + " is a good boy");
